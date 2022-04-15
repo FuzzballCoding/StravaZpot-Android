@@ -194,6 +194,7 @@ public class ClubAPITest extends StravaAPITest {
                 "  \"description\": \"From the people who brought you strava.com\",\n" +
                 "  \"club_type\": \"company\",\n" +
                 "  \"sport_type\": \"cycling\",\n" +
+                "  \"activity_types\": [ \"cycling\" ],\n" +
                 "  \"city\": \"San Francisco\",\n" +
                 "  \"state\": \"California\",\n" +
                 "  \"country\": \"United States\",\n" +
@@ -204,6 +205,8 @@ public class ClubAPITest extends StravaAPITest {
                 "  \"membership\": \"member\",\n" +
                 "  \"admin\": true,\n" +
                 "  \"owner\": false,\n" +
+                "  \"owner_id\": 227615,\n" +
+                "  \"post_count\": 321,\n" +
                 "  \"following_count\": 1,\n" +
                 "  \"url\": \"strava-cycling\"\n" +
                 "}";

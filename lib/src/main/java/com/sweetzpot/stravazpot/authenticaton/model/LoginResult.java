@@ -7,30 +7,30 @@ import com.sweetzpot.stravazpot.authenticaton.model.Token;
 import java.util.Date;
 
 public class LoginResult {
-    @SerializedName("access_token") private String token;
-    @SerializedName("refresh_token") private String refreshToken;
-    @SerializedName("athlete") private Athlete athlete;
     @SerializedName("expires_at") private long expiresAt;
     @SerializedName("expires_in") private long expiresIn;
+    @SerializedName("refresh_token") private String refreshToken;
+    @SerializedName("access_token") private String token;
+    @SerializedName("athlete") private Athlete athlete;
 
     public Token getToken() {
         return new Token(token);
     }
+    
+    public long getExpiresAt() {
+        return expiresAt;
+    }
 
-    public String getTokenValue() {
-	    return token;
+    public long getExpiresIn() {
+        return expiresIn;
     }
 
     public String getRefreshToken() {
         return refreshToken;
     }
 
-    public long getExpiresAt() {
-	    return expiresAt;
-    }
-
-    public long getExpiresIn() {
-	    return expiresIn;
+    public String getTokenValue() {
+	    return token;
     }
 
     public Athlete getAthlete() {

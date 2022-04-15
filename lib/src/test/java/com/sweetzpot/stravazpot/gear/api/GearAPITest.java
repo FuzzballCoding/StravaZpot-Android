@@ -32,7 +32,6 @@ public class GearAPITest extends StravaAPITest{
     private void assertGearParsedCorrectly(Gear gear) {
         assertThat(gear.getID(), is("b105763"));
         assertThat(gear.isPrimary(), is(false));
-        assertThat(gear.getName(), is("Cannondale TT"));
         assertThat(gear.getDistance(), is(Distance.meters(476612.8f)));
         assertThat(gear.getResourceState(), is(ResourceState.DETAILED));
         assertThat(gear.getBrandName(), is("Cannondale"));

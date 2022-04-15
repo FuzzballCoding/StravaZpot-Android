@@ -6,9 +6,8 @@ import com.sweetzpot.stravazpot.common.model.ResourceState;
 
 public class Gear {
     @SerializedName("id") private String ID;
-    @SerializedName("resource_state") private ResourceState resourceState;
     @SerializedName("primary") private boolean primary;
-    @SerializedName("name") private String name;
+    @SerializedName("resource_state") private ResourceState resourceState;
     @SerializedName("distance") private Distance distance;
     @SerializedName("brand_name") private String brandName;
     @SerializedName("model_name") private String modelName;
@@ -19,16 +18,12 @@ public class Gear {
         return ID;
     }
 
-    public ResourceState getResourceState() {
-        return resourceState;
-    }
-
     public boolean isPrimary() {
         return primary;
     }
 
-    public String getName() {
-        return name;
+    public ResourceState getResourceState() {
+        return resourceState;
     }
 
     public Distance getDistance() {

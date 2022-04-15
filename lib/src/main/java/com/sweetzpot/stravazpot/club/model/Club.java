@@ -11,9 +11,8 @@ public class Club {
     @SerializedName("profile") private String profile;
     @SerializedName("cover_photo") private String coverPhoto;
     @SerializedName("cover_photo_small") private String coverPhotoSmall;
-    @SerializedName("description") private String description;
-    @SerializedName("club_type") private ClubType clubType;
     @SerializedName("sport_type") private SportType sportType;
+    @SerializedName("activity_types") private String[] activityTypes;
     @SerializedName("city") private String city;
     @SerializedName("state") private String state;
     @SerializedName("country") private String country;
@@ -21,11 +20,15 @@ public class Club {
     @SerializedName("member_count") private int memberCount;
     @SerializedName("featured") private boolean featured;
     @SerializedName("verified") private boolean verified;
+    @SerializedName("url") private String url;
     @SerializedName("membership") private Membership membership;
     @SerializedName("admin") private boolean admin;
     @SerializedName("owner") private boolean owner;
+    @SerializedName("description") private String description;
+    @SerializedName("club_type") private ClubType clubType;
+    @SerializedName("post_count") private int postCount;
+    @SerializedName("owner_id") private int ownerId;
     @SerializedName("following_count") private int followingCount;
-    @SerializedName("url") private String url;
 
     public int getID() {
         return ID;
@@ -55,16 +58,12 @@ public class Club {
         return coverPhotoSmall;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public ClubType getClubType() {
-        return clubType;
-    }
-
     public SportType getSportType() {
         return sportType;
+    }
+
+    public String[] getActivityTypes() {
+        return activityTypes;
     }
 
     public String getCity() {
@@ -95,6 +94,10 @@ public class Club {
         return verified;
     }
 
+    public String getUrl() {
+        return url;
+    }
+
     public Membership getMembership() {
         return membership;
     }
@@ -107,11 +110,23 @@ public class Club {
         return owner;
     }
 
-    public int getFollowingCount() {
-        return followingCount;
+    public String getDescription() {
+        return description;
     }
 
-    public String getUrl() {
-        return url;
+    public ClubType getClubType() {
+        return clubType;
+    }
+
+    public int getPostCount() {
+        return postCount;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public int getFollowingCount() {
+        return followingCount;
     }
 }

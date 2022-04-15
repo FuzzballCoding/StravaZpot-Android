@@ -65,6 +65,7 @@ public class AuthenticationAPITest extends StravaAPITest {
                 "  \"access_token\": \"83ebeabdec09f6670863766f792ead24d61fe3f9\",\n" +
                 "  \"athlete\": {\n" +
                 "    \"id\": 227615,\n" +
+                "    \"username\": \"JStrava\",\n" +
                 "    \"resource_state\": 3,\n" +
                 "    \"firstname\": \"John\",\n" +
                 "    \"lastname\": \"Applestrava\",\n" +
@@ -79,6 +80,7 @@ public class AuthenticationAPITest extends StravaAPITest {
                 "    \"premium\": true,\n" +
                 "    \"created_at\": \"2008-01-01T17:44:00Z\",\n" +
                 "    \"updated_at\": \"2013-09-04T20:00:50Z\",\n" +
+                "    \"badge_type_id\": 1,\n" +
                 "    \"follower_count\": 273,\n" +
                 "    \"friend_count\": 19,\n" +
                 "    \"mutual_friend_count\": 0,\n" +
